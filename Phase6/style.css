@@ -64,6 +64,7 @@ body{
 .text{
 	font-size:30px;
 	color:black;
+	text-align:center;
 }
 .top-img{
 	position: absolute;
