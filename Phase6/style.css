@@ -22,6 +22,9 @@ body{
 	align-items: center;
 	justify-content: center;
 }
+.hide {
+	display:none;
+}
 .hint-holder{
 	height:25%;
 }
