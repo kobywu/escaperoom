@@ -1,8 +1,9 @@
-function random(){
-    var question = ["Who is the defense-man?", "Who is known as the great one?", "Who is known as the Finnish flash?", "Who has the most wins over their career?", "What team has the most Stanley Cup wins?"];
-    var rand = Math.floor(Math.random() * question.length );
-    document.getElementById("question").innerHTML = question[rand];
-}
+a = document.getElementById("img1");
+b = document.getElementById("img2");
+c = document.getElementById("img3");
+d = document.getElementById("img4");
+question = ["Who is the defense-man?", "Who is known as the great one?", "Who is known as the Finnish flash?", "Who has the most wins over their career?", "What team has the most Stanley Cup wins?"];
+rand = Math.floor(Math.random() * question.length );
 //the images will cycle from brent - sidney - alex - wayne - teemu - red - martin - montrael then will start again when the image is clicked
 
 function img1(el){
@@ -108,5 +109,23 @@ function img4(el){
 	} 
 }
 
+function random(){
+    document.getElementById("question").innerHTML = question[rand];
+	console.log("The number of the question is " + rand);
+}
 
+function checkAnswer(){
+	if (rand==1 && a.src.match("images/wayne1.png") && b.src.match("images/wayne2.png") && c.src.match("images/wayne3.png") && d.src.match("images/wayne4.png")) {
+		console.log("yay you did");
+	} else if (rand==0 && a.src.match("images/wayne1.png") && b.src.match("images/wayne2.png") && c.src.match("images/wayne3.png") && d.src.match("images/wayne4.png")) {
+		console.log("yay you did");
+	} else if (rand==2 && a.src.match("images/wayne1.png") && b.src.match("images/wayne2.png") && c.src.match("images/wayne3.png") && d.src.match("images/wayne4.png")) {
+		console.log("yay you did");
+	} else if (rand==3 && a.src.match("images/wayne1.png") && b.src.match("images/wayne2.png") && c.src.match("images/wayne3.png") && d.src.match("images/wayne4.png")) {
+		console.log("yay you did");
+	} else if (rand==4 && a.src.match("images/wayne1.png") && b.src.match("images/wayne2.png") && c.src.match("images/wayne3.png") && d.src.match("images/wayne4.png")) {
+		console.log("yay you did");
+	} 
+	
+}
 
