@@ -21,6 +21,10 @@ body{
 	display:flex;
 	align-items: center;
 	justify-content: center;
+	text-align:center;
+}
+.hide{
+	display:none;
 }
 .hint-holder{
 	height:25%;
@@ -64,7 +68,6 @@ body{
 .text{
 	font-size:30px;
 	color:black;
-	text-align:center;
 }
 .top-img{
 	position: absolute;
