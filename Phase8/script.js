@@ -21,7 +21,15 @@ function random(){
 function hint(el) {
 	if (rand==0) {
 		el.src = "";
-	}
+	} else if (rand==1) {
+		el.src = "";
+	} else if (rand==2) {
+		el.src = "";
+	} else if (rand==3) {
+		el.src = "";
+	} else if (rand==4) {
+		el.src = "";
+	} 
 }
 
 //the images will cycle from brent - sidney - alex - wayne - teemu - red - martin - montrael then will start again when the top left image is clicked on
