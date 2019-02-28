@@ -18,17 +18,20 @@ function random(){
 	console.log("The number of the question is " + rand);
 }
 
+//This function will run when the user clicks on the NHL logo to get a hint
 function hint(el) {
+	//when the question is "who is the defense-man?" the hint will be a picture of the brown hair
+	//the NHL logo will change it's source to the brown hair image
 	if (rand==0) {
-		el.src = "";
+		el.src = "images/brown.png";
 	} else if (rand==1) {
-		el.src = "";
+		el.src = "images/kings.png";
 	} else if (rand==2) {
-		el.src = "";
+		el.src = "images/ducks.png";
 	} else if (rand==3) {
-		el.src = "";
+		el.src = "images/devils.png";
 	} else if (rand==4) {
-		el.src = "";
+		el.src = "images/canada.png";
 	} 
 }
 
