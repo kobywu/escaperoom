@@ -23,7 +23,7 @@ function hint(el) {
 	//when the question is "who is the defense-man?" the hint will be a picture of the brown hair
 	//the NHL logo will change it's source to the brown hair image
 	if (rand==0) {
-		el.src = "images/brown.png";
+		el.src = "images/sharks.png";
 	} else if (rand==1) {
 		el.src = "images/kings.png";
 	} else if (rand==2) {

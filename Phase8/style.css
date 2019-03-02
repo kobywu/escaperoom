@@ -15,9 +15,11 @@ body{
 	top:0;
 }
 .check-button{
-	width: 30%;
-	height:50%;
-	background-color:#FFFFFD;
+	width: 20%;
+	height:100%;
+	background-size:100% 100%;
+    background-repeat: no-repeat;
+	background-image: url("images/puck.png");
 }
 .center-content {
 	display:flex;
@@ -68,8 +70,11 @@ body{
 	height:10%;
 }
 .text{
-	font-size:60px;
-	color:black;
+	font-size:40px;
+	color:white;
+	font-family:Courier New;
+	font-weight:bold;
+	 text-shadow: 4px 4px black;
 }
 .top-img{
 	position: absolute;
