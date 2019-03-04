@@ -5,7 +5,7 @@ c = document.getElementById("img3");
 d = document.getElementById("img4");
 key = document.getElementById("winner");
 //the variables to set the timer to 30 seconds when the page loads
-timeLeft = 30;
+timeLeft = 45;
 elem = document.getElementById('timer');
 timerId = setInterval(countdown, 1000);
 
@@ -14,7 +14,7 @@ question = ["Who is the defense-man?", "Who is known as the great one?", "Who is
 //this variable will randomly select an array value from the question array
 rand = Math.floor(Math.random() * question.length );
 
-//this function will run when the page loads. Starting at 30 seconds, it will countdown to 0 seconds. The timeLeft value will be displayed until it reaches 0 seconds
+//this function will run when the page loads. Starting at 45 seconds, it will countdown to 0 seconds. The timeLeft value will be displayed until it reaches 0 seconds
 function countdown() {
     if (timeLeft == 0) {
 		elem.innerHTML ='';
