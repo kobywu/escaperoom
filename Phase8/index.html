@@ -16,7 +16,7 @@
 				<img class="restrict-img-size" src="images/nhl_logo.png" onclick = "hint(this)"/>
 			</div>
 			<div class = "question-holder width center-content">
-				<div class="text" id ="question"></div>
+				<div class="text question-text" id ="question"></div>
 			</div>
 			<div class = "hint-holder width center-content">
 				<img class="restrict-img-size hide" id="winner" src="images/key.jpg"/>
@@ -24,6 +24,9 @@
 		</div>
 		<div class="right-col">
 			<div class = "space width">
+				<div class="countdown center-content">
+					<div class="timer-text" id="timer"></div>
+				</div>
 			</div>
 			<div class = "row width center-content">
 				<div class = "image-square">
@@ -41,10 +44,10 @@
 					<img class="restrict-img-size bottom-img right-img" src="images/wayne4.png" id="img4" onclick="img4(this)"></img>
 				</div>
 			</div>
-			<div class = "space width"></div>
+			<div class = "extra-space width"></div>
 			<div class = "answer width center-content">
 				<div class ="check-button center-content">
-					<div class="text center-content" onclick="checkAnswer()">Check Answer</div>
+					<div class="text answer-text center-content" onclick="checkAnswer()">Check Answer</div>
 				</div>
 			</div>
 		</div>

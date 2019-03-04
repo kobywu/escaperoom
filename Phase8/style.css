@@ -8,7 +8,10 @@ body{
     background-repeat: no-repeat;
 }
 .answer{
-	height:20%;
+	height:25%;
+}
+.answer-text{
+	font-size:30px;
 }
 .bottom-img{
 	position: absolute;
@@ -26,6 +29,13 @@ body{
 	align-items: center;
 	justify-content: center;
 	text-align:center;
+}
+.countdown{
+	background-color:black;
+	width: 20%;
+	height:100%;
+	margin-left:auto; 
+	margin-right:20;
 }
 .hide{
 	display:none;
@@ -50,10 +60,14 @@ body{
 .question-holder{
 	height:50%;
 }
+.question-text {
+	font-size:40px;
+}
 .restrict-img-size {
 	max-height: 100%;
 	max-width: 100%;
 }
+
 .right-col{
 	display:block;
 	width: calc(100% * 2/3);
@@ -69,12 +83,20 @@ body{
 .space{
 	height:10%;
 }
+.extra-space{
+	height:5%;
+}
 .text{
-	font-size:40px;
 	color:white;
 	font-family:Courier New;
 	font-weight:bold;
-	 text-shadow: 4px 4px black;
+	text-shadow: 4px 4px black;
+}
+.timer-text{
+	color:white;
+	font-family:Courier New;
+	font-weight:bold;
+	font-size:20px;
 }
 .top-img{
 	position: absolute;

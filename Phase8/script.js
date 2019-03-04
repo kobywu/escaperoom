@@ -4,12 +4,27 @@ b = document.getElementById("img2");
 c = document.getElementById("img3");
 d = document.getElementById("img4");
 key = document.getElementById("winner");
+//the variables to set the timer to 30 seconds when the page loads
+timeLeft = 30;
+elem = document.getElementById('timer');
+timerId = setInterval(countdown, 1000);
+
 //this array holds the questions that can be randomly selected when the page is loaded
 question = ["Who is the defense-man?", "Who is known as the great one?", "Who is known as the Finnish flash?", "Who has the most wins over their career?", "What team has the most Stanley Cup wins?"];
 //this variable will randomly select an array value from the question array
 rand = Math.floor(Math.random() * question.length );
 
-
+//this function will run when the page loads. Starting at 30 seconds, it will countdown to 0 seconds. The timeLeft value will be displayed until it reaches 0 seconds
+function countdown() {
+    if (timeLeft == 0) {
+		elem.innerHTML ='';
+		//when the timeLeft variable is 0, then the key image will be displayed because the class that hides it will be removed
+		document.getElementById('winner').classList.remove('hide');
+    } else {
+        elem.innerHTML = timeLeft + ' seconds left';
+        timeLeft--;
+    }
+} 
 //This function will run when the body in the HTML is loaded
 function random(){
 	//this will call the HTML element with the id ="question" and change the text to a randomly selected question array value
