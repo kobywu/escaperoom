@@ -19,10 +19,12 @@ rand = Math.floor(Math.random() * question.length );
 //this function will run when the page loads. Starting at 45 seconds, it will countdown to 0 seconds. The timeLeft value will be displayed until it reaches 0 seconds
 function countdown() {
     if (timeLeft == 0) {
+		//when the timeLeft variable is 0, then the key image will be displayed because the class that hides it will be removed. A pop up will appear, a booing sound will play and the page will reload
 		timer.innerHTML ='';
-		//when the timeLeft variable is 0, then the key image will be displayed because the class that hides it will be removed
-		wrong.play();
 		hideTimer.classList.add('hide');
+		wrong.play();
+		window.alert("sorry you ran out of time");
+		location.reload();
     } else {
         timer.innerHTML = timeLeft + ' seconds left';
         timeLeft--;
@@ -198,8 +200,8 @@ function checkAnswer(){
 		hideTimer.classList.add('hide');
 		window.alert("yay you did");
 		correct.play();
-	} //if the answer is incorrect, an alert will appear saying that they need to start again, a booing sound will play and the page will restart
-	else { 
+	}
+	else {  //if the answer is incorrect, an alert will appear saying that they need to start again, a booing sound will play and the page will restart
 		wrong.play();
 		window.alert("sorry you're wrong. Restart");
 		location.reload();
