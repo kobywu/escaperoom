@@ -4,13 +4,14 @@ b = document.getElementById("img2");
 c = document.getElementById("img3");
 d = document.getElementById("img4");
 key = document.getElementById("winner");
-//the variables to set the timer to 30 seconds when the page loads
+//the variables to set the timer to 45 seconds when the page loads
 timeLeft = 45;
 timer = document.getElementById('timer');
 timerId = setInterval(countdown, 1000);
 wrong = new Audio('sounds/booing.mp3');
 correct = new Audio('sounds/crowd.mp3');
 hideTimer = document.getElementById('timer-holder');
+
 //this array holds the questions that can be randomly selected when the page is loaded
 question = ["Who is the defense-man?", "Who is known as the great one?", "Who is known as the Finnish flash?", "Who has the most wins over their career?", "What team has the most Stanley Cup wins?"];
 //this variable will randomly select an array value from the question array
@@ -25,7 +26,7 @@ function countdown() {
 		wrong.play();
 		window.alert("sorry you ran out of time");
 		location.reload();
-    } else {
+    } else { //this is display the seonds left until it reaches 0
         timer.innerHTML = timeLeft + ' seconds left';
         timeLeft--;
     }
